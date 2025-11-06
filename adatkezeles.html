@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BalatonGo – Adatkezelési tájékoztató</title>
+  <meta name="description" content="BalatonGo – GDPR 13–14. cikk szerinti rövid adatkezelési tájékoztató">
+  <style>
+    :root{color-scheme: dark light}
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, sans-serif;
+      margin:0; padding:32px 16px; line-height:1.6;
+      background:#0b0e13; color:#e7e9ee;
+    }
+    .wrap{max-width:880px;margin:0 auto}
+    h1{margin:0 0 8px;font-size:clamp(1.6rem,2.8vw,2.2rem)}
+    h2{margin:24px 0 8px;font-size:1.15rem;letter-spacing:.02em}
+    p,li{margin:.45rem 0}
+    a{color:#79b9ff;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .muted{opacity:.78}
+    .box{background:#0e1420;border:1px solid #1b2333;border-radius:14px;padding:18px;margin:14px 0}
+    ul{margin:.2rem 0 .2rem 1.2rem}
+    code{background:#111824;border-radius:.35rem;padding:.08rem .4rem}
+    .stamp{margin-top:24px;font-size:.95rem}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Adatkezelési tájékoztató</h1>
+    <p class="muted">GDPR 13–14. cikk szerinti rövid tájékoztatás. Ez a dokumentum a BalatonGo alkalmazás és kapcsolódó oldalak alapvető adatkezelését foglalja össze.</p>
+
+    <section class="box">
+      <h2>1) Adatkezelő</h2>
+      <p><strong>Név:</strong> BalatonGo (fejlesztés alatt) <br>
+         <strong>Elérhetőség:</strong> <a href="mailto:balaton.go.info@gmail.com">balaton.go.info@gmail.com</a></p>
+      <p class="muted">A végleges jogi adatok (székhely, adószám, nyilvántartási szám) megjelennek, amikor a szolgáltatás üzemszerűen indul.</p>
+    </section>
+
+    <section class="box">
+      <h2>2) Kezelt adatok és célok</h2>
+      <ul>
+        <li><strong>Bejelentkezés:</strong> e-mail cím, jelszó (hash-elve) – felhasználói fiók létrehozása, azonosítás. (<em>Firebase Authentication</em>)</li>
+        <li><strong>Kedvencek / profil:</strong> felhasználói azonosító, mentett elemek listája, opcionális megjelenített név – szinkron több eszköz között. (<em>Cloud Firestore</em>)</li>
+        <li><strong>Helyadatok:</strong> a „Közelben” funkcióhoz eseti/engedélyezett hozzáférés – csak a funkció működéséhez, nem tárolunk tartós helyelőzményt.</li>
+        <li><strong>Kapcsolat űrlap:</strong> név (opcionális), e-mail, tárgy, üzenet – ügyfélszolgálati kommunikáció és visszajelzések kezelése.</li>
+        <li><strong>Naplózás/hibajelzés:</strong> technikai metaadatok (eszköz/OS, hiba stack trace) – a szolgáltatás stabilitásának javítása.</li>
+      </ul>
+    </section>
+
+    <section class="box">
+      <h2>3) Jogalap</h2>
+      <ul>
+        <li><strong>Szerződés teljesítése</strong> – GDPR 6. cikk (1) b): fiók létrehozása, bejelentkezés, kedvencek szinkronja.</li>
+        <li><strong>Jogos érdek</strong> – GDPR 6. cikk (1) f): biztonság, visszaélések megelőzése, hibajavítás.</li>
+        <li><strong>Hozzájárulás</strong> – GDPR 6. cikk (1) a): pl. helyhozzáférés a „Közelben” funkcióhoz; marketing e-mailek csak kifejezett engedéllyel.</li>
+      </ul>
+    </section>
+
+    <section class="box">
+      <h2>4) Tárolás időtartama</h2>
+      <p>A fiók fennállásáig; törlési kérelem esetén a kapcsolódó adatok ésszerű határidőn belül törlésre kerülnek, kivéve, ha jogi kötelezettség miatt hosszabb megőrzés szükséges.</p>
+    </section>
+
+    <section class="box">
+      <h2>5) Adatfeldolgozók és adattovábbítás</h2>
+      <ul>
+        <li><strong>Firebase (Google LLC):</strong> hitelesítés (Auth), adatbázis (Firestore), e-mail küldés (SMTP). Szerverek EU/US; standard szerződési feltételek (SCC) érvényesek.</li>
+        <li><strong>GitHub Pages (GitHub, Inc.):</strong> statikus jogi oldalak tárhelye.</li>
+        <li><strong>E-mail szolgáltató:</strong> Gmail (Google) – ügyfélszolgálati levelezés.</li>
+      </ul>
+      <p class="muted">Az igénybe vett szolgáltatók saját adatvédelmi feltételei irányadók a rájuk bízott adatok vonatkozásában.</p>
+    </section>
+
+    <section class="box">
+      <h2>6) Érintetti jogok</h2>
+      <ul>
+        <li>hozzáférés, helyesbítés, törlés („elfeledtetés”), adatkezelés korlátozása, adathordozhatóság, tiltakozás;</li>
+        <li>panasz benyújtása: <strong>Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH)</strong> – <a href="https://naih.hu/" target="_blank" rel="noopener">naih.hu</a></li>
+      </ul>
+      <p>Kérelmeidet a <a href="mailto:balaton.go.info@gmail.com">balaton.go.info@gmail.com</a> címen fogadjuk. Azonosítást kérhetünk a kérés teljesítéséhez.</p>
+    </section>
+
+    <section class="box">
+      <h2>7) Biztonság</h2>
+      <p>Jelszavak csak erős kriptográfiai hash formában kerülnek tárolásra. Kommunikáció TLS-en keresztül, hozzáférés-kezelés és naplózás kötelező. Jogosulatlan hozzáférés gyanúja esetén értesítést adunk és incidenskezelési eljárást indítunk.</p>
+    </section>
+
+    <p class="stamp muted">
+      Verzió: 0.1 • Készült: <time datetime="2025-11-06">2025.11.06.</time><br>
+      Kapcsolódó dokumentumok: <a href="impresszum.html">Impresszum</a> • <a href="aszf.html">ÁSZF</a>
+    </p>
+  </main>
+</body>
+</html>
