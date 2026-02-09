@@ -20,18 +20,21 @@
       padding: 18px 14px 26px;
     }
 
+    /* Fő cím (középen) */
     h1 {
-  font-size: 24px;
-  margin-bottom: 12px;
-  text-align: center;
-  color: #38bdf8;
-}
+      font-size: 24px;
+      margin: 10px 0 14px;
+      text-align: center;
+      color: #38bdf8;
+      letter-spacing: 0.3px;
+    }
 
-    /* ---- INTRO BLOKK ---- */
-   .intro-block {
-  max-width: 720px;
-  margin: 0 0 26px 0;
-}
+    /* Intro blokk (felsorolás + jogi nyelv megjegyzések) */
+    .intro-block {
+      max-width: 900px;
+      margin: 0 auto 18px;
+    }
+
     .intro-block ul {
       margin: 10px 0 14px;
       padding-left: 18px;
@@ -45,25 +48,43 @@
     .legal-note {
       font-size: 13px;
       margin: 10px 0;
+      opacity: 0.95;
     }
 
     .legal-note.strong {
-      font-weight: 600;
+      font-weight: 700;
+      opacity: 1;
     }
 
     .intro-sep {
       border-top: 1px solid rgba(203,233,248,0.35);
       margin: 18px 0;
     }
-.meta-line {
-  font-size: 13px;
-  opacity: 0.85;
-  margin: 18px 0 22px;
-  text-align: left;
-  line-height: 1.5;
-}
 
-    /* ---- TÖBBI SZÖVEG ---- */
+    /* Meta sor (balra) */
+    .meta-line {
+      font-size: 13px;
+      opacity: 0.85;
+      margin: 16px 0 22px;
+      text-align: left;
+      line-height: 1.5;
+    }
+
+    /* Nyelvi blokkok */
+    .lang-block {
+      margin: 18px 0 0;
+    }
+
+    .lang-title {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      margin: 0 0 10px;
+      color: #22c55e; /* zöldes kiemelés */
+    }
+
+    /* Törzs szövegek */
     h2 {
       font-size: 16px;
       margin: 14px 0 6px;
@@ -88,9 +109,7 @@
       text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
-    }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 
@@ -123,183 +142,293 @@
       <div class="intro-sep"></div>
     </div>
 
-<div class="meta-line">
-  Hatálybalépés dátuma: 2025. november 5. ·
-  Szolgáltató: dr. Krizsán Szonja Katalin (Torony, Magyarország)
-</div>
+    <div class="meta-line">
+      Hatálybalépés dátuma: 2025. november 5. ·
+      Szolgáltató: dr. Krizsán Szonja Katalin (Torony, Magyarország)
+    </div>
 
+    <div class="intro-sep"></div>
 
-    <h2>1. Szolgáltató adatai</h2>
-    <p>Szolgáltató neve: dr. Krizsán Szonja Katalin</p>
-    <p>Székhely: Torony, Magyarország</p>
-    <p>E-mail cím: <a href="mailto:balaton.go.info@gmail.com">balaton.go.info@gmail.com</a></p>
-    <p>Telefon: –</p>
-    <p>Adószám / nyilvántartási szám: –</p>
-    <p>
-      A Szolgáltató, mint a BalatonGo alkalmazás fejlesztője és üzemeltetője
-      (a továbbiakban: Szolgáltató), a jelen Általános Szerződési Feltételekben
-      (ÁSZF) foglaltak szerint biztosítja a felhasználók számára az alkalmazás használatát.
-    </p>
+    <!-- ENGLISH -->
+    <section class="lang-block" id="en">
+      <div class="lang-title">English — Terms of Service (informational)</div>
 
-    <h2>2. A szolgáltatás leírása</h2>
-    <p>
-      A BalatonGo egy online turisztikai alkalmazás, amely a Balaton térségében található
-      túraútvonalakat, látnivalókat, menetrendeket, időjárási információkat és egyéb,
-      a kirándulást segítő adatokat jeleníti meg.
-    </p>
-    <p>
-      Az alkalmazás célja, hogy a felhasználók számára élményszerű, áttekinthető és
-      naprakész tájékoztatást nyújtson a Balaton környékének természeti, kulturális
-      és szabadidős lehetőségeiről.
-    </p>
-    <p>
-      A BalatonGo jelenleg kizárólag információs célokat szolgál, nem nyújt közvetlen
-      foglalási, jegyvásárlási vagy egyéb kereskedelmi szolgáltatást.
-      A megjelenített adatok tájékoztató jellegűek; pontosságukért és naprakészségükért
-      a Szolgáltató felelősséget nem vállal, különösen külső forrásból származó adatok esetén
-      (pl. menetrendek, nyitvatartások, időjárási információk).
-    </p>
-    <p>
-      A BalatonGo a jövőben prémium funkciókat és reklámmentes előfizetési lehetőséget is
-      kínálhat, illetve a térség szolgáltatóival együttműködésben bővítheti tartalmát.
-      Az ilyen szolgáltatások feltételeiről a Szolgáltató külön tájékoztatást ad.
-    </p>
+      <h2>1. Provider Details</h2>
+      <p>
+        <strong>Provider Name:</strong> dr. Szonja Katalin Krizsán<br>
+        <strong>Registered Office:</strong> Torony, Hungary<br>
+        <strong>Email:</strong> balaton.go.info@gmail.com<br>
+        <strong>Phone:</strong> –<br>
+        <strong>Tax ID / Registration number:</strong> –
+      </p>
+      <p>
+        The provider, as the developer and operator of the BalatonGo application (hereinafter: Provider),
+        ensures the use of the application for users according to the provisions of these General Terms and
+        Conditions (GTC).
+      </p>
 
-    <h2>3. A szolgáltatás igénybevételének feltételei</h2>
+      <h2>2. Description of the Service</h2>
+      <p>
+        BalatonGo is an online tourism application that displays hiking trails, sights, schedules, weather
+        information, and other data supporting excursions in the Balaton region. The purpose of the
+        application is to provide users with an experiential, transparent, and up-to-date overview of the
+        natural, cultural, and leisure opportunities around Lake Balaton.
+      </p>
+      <p>
+        BalatonGo currently serves informational purposes only and does not provide direct booking, ticket
+        purchasing, or other commercial services. The displayed data is for information purposes; the Provider
+        assumes no responsibility for its accuracy or timeliness, especially regarding content from external
+        sources (e.g., schedules, opening hours, weather data).
+      </p>
 
-    <h3>3.1. Felhasználói kör</h3>
-    <p>
-      A BalatonGo alkalmazást kizárólag természetes személyek (magánszemélyek)
-      használhatják, saját felelősségükre és kizárólag személyes, nem kereskedelmi célból.
-      A szolgáltatás célja az egyéni kikapcsolódás, kirándulástervezés és tájékozódás támogatása.
-    </p>
+      <h2>3. Conditions of Use</h2>
+      <p>
+        3.1. The BalatonGo application may only be used by natural persons (individuals) at their own risk and
+        exclusively for personal, non-commercial purposes. The purpose of the service is to support
+        individual relaxation, excursion planning, and information gathering.
+      </p>
+      <p>
+        3.2. It is prohibited to use the application or any part of it:
+      </p>
+      <ul>
+        <li>for commercial, business, or advertising purposes;</li>
+        <li>to copy, distribute, modify, or republish the content of the application (text, images, data, source code, structure);</li>
+        <li>to use automated systems ("bot", "scraper", "crawler", etc.) for data collection or integration into other systems;</li>
+        <li>in a way that violates the Provider's legitimate interests, or in a misleading or illegal manner.</li>
+      </ul>
+      <p>
+        3.3. The contents of BalatonGo are protected by copyright. Without the Provider's prior written
+        permission, any public reuse, resale, or publication of content from the application in any form is
+        prohibited.
+      </p>
+      <p>
+        3.4. The Provider reserves the right to restrict or terminate access for users who violate the rules
+        without prior notice.
+      </p>
 
-    <h3>3.2. Tilos felhasználási módok</h3>
-    <p>Tilos az alkalmazást vagy annak bármely részét az alábbiak szerint használni:</p>
-    <ul>
-      <li>kereskedelmi, üzleti, reklámcélra felhasználni a Szolgáltató előzetes írásbeli engedélye nélkül;</li>
-      <li>az alkalmazás tartalmát (szöveg, kép, adat, útvonal, struktúra, forráskód, dizájn)
-          engedély nélkül másolni, terjeszteni, módosítani vagy nyilvánosan közzétenni;</li>
-      <li>automatizált eszközökkel („bot”, „scraper”, „crawler” stb.) adatot gyűjteni
-          vagy az adatbázist más rendszerbe integrálni;</li>
-      <li>a Szolgáltató, illetve harmadik személy jogait sértő, jogellenes vagy megtévesztő módon használni.</li>
-    </ul>
+      <h2>4. Copyright and Data Protection</h2>
+      <p>
+        4.1. The entire content of the BalatonGo application – including but not limited to texts, images,
+        databases, routes, audio materials, icons, source code, design, and layout – is protected by
+        copyright and is the exclusive property of dr. Szonja Katalin Krizsán. Unauthorized use, copying,
+        modification, distribution, publication, or integration into any other system in any form is prohibited
+        and illegal.
+      </p>
+      <p>
+        4.2. BalatonGo databases (e.g., hiking trails, schedules, collections of locations) are based on the
+        Provider's own research, collection, and organization. These databases are protected as independent
+        database works under Government Decree 84/2002 (IV.4.) and the Database Directive (96/9/EC); their
+        copying or reuse is only possible with the Provider's permission.
+      </p>
+      <p>
+        4.3. By using the application, users agree that they may view and use the content available in
+        BalatonGo solely for personal, non-business purposes. Secondary use of the content for commercial or
+        marketing purposes without the Provider's prior written permission is prohibited.
+      </p>
+      <p>
+        4.4. During the operation of the application, the Provider does not collect personal data from users,
+        unless the user voluntarily provides it (e.g., contact, newsletter, registration). The processing of
+        personal data is always carried out in accordance with current data protection laws (GDPR).
+      </p>
+      <p>
+        4.5. External links within BalatonGo content (e.g., links to schedule, tourism, or weather sites) may
+        point to third-party pages, for whose content the Provider assumes no responsibility.
+      </p>
 
-    <h3>3.3. Szerződésszegés következménye</h3>
-    <p>
-      A Szolgáltató fenntartja a jogot, hogy a jelen ÁSZF rendelkezéseit megsértő felhasználók
-      hozzáférését előzetes figyelmeztetés nélkül korlátozza vagy megszüntesse.
-    </p>
+      <h2>5. Disclaimer and Operating Conditions</h2>
+      <p>
+        5.1. The Provider makes all reasonable efforts to ensure that the information appearing in the
+        BalatonGo application is accurate, up-to-date, and available. Nevertheless, the Provider does not
+        guarantee the completeness or correctness of the data, nor the continuous and error-free operation of
+        the service.
+      </p>
+      <p>
+        5.2. Data, images, schedules, weather information, opening hours, and other content appearing in
+        BalatonGo are for informational purposes; the Provider is not obliged to verify their correctness and
+        timeliness. Users act entirely at their own risk regarding decisions made based on information in the
+        application (e.g., travel, program choice, accommodation booking).
+      </p>
+      <p>
+        5.3. The Provider is not liable for direct or indirect damages resulting from the use or failure of
+        the service, including data loss, loss of profit, technical errors, network problems, device failure,
+        or any other circumstances arising on the user's side.
+      </p>
+      <p>
+        5.4. BalatonGo may also display data from third parties (e.g., schedule providers, tourism
+        organizations, weather portals), for whose content, changes, or unavailability the Provider assumes no
+        responsibility.
+      </p>
+      <p>
+        5.5. The Provider is entitled to modify, suspend, or terminate the content, functions, and operation
+        of the application at any time without prior notice. Users cannot claim any compensation resulting
+        from this.
+      </p>
 
-    <h2>4. Szerzői jogok és adatvédelem</h2>
+      <h2>6. Final Provisions</h2>
+      <p>
+        6.1. The purpose of these General Terms and Conditions (GTC) is to define the legal framework for using
+        the BalatonGo application. The GTC enters into force on the day of publication and remains valid until
+        withdrawal.
+      </p>
+      <p>
+        6.2. The Provider is entitled to unilaterally modify the content of the GTC at any time, especially if
+        the operation of the application, the scope of services, or the legal environment justifies it.
+        Modifications become effective upon publication.
+      </p>
+      <p>
+        6.3. By using the BalatonGo application, the user accepts the GTC currently in force.
+      </p>
+      <p>
+        6.4. Matters not regulated in these GTC are governed by Hungarian law, particularly the Civil Code (Act
+        V of 2013), the Act on Electronic Commerce Services (Act CVIII of 2001), and the Copyright Act (Act
+        LXXVI of 1999).
+      </p>
+      <p>
+        6.5. The parties wish to settle their disputes primarily through peaceful negotiation. If this is
+        unsuccessful, the jurisdiction of the Szombathely District Court is stipulated for the settlement of
+        the legal dispute.
+      </p>
 
-    <h3>4.1. Szellemi tulajdon</h3>
-    <p>
-      A BalatonGo alkalmazás teljes tartalma – ideértve többek között a szövegeket, képeket,
-      ikonokat, útvonalakat, adatbázisokat, dizájnt és elrendezést – szerzői jogvédelem alatt áll,
-      és dr. Krizsán Szonja Katalin kizárólagos tulajdonát képezi.
-      Ezek engedély nélküli felhasználása, másolása, módosítása, terjesztése vagy bármely más
-      rendszerbe való beépítése tilos.
-    </p>
+      <p><strong>Effective Date:</strong> November 5, 2025</p>
+    </section>
 
-    <h3>4.2. Adatbázis-védelem</h3>
-    <p>
-      A BalatonGo adatbázisai (pl. túraútvonalak, menetrendek, helyszíngyűjtemények)
-      önálló adatbázis-műnek minősülnek; részben vagy egészben történő átvételük,
-      másolásuk vagy újrahasznosításuk a Szolgáltató előzetes írásbeli engedélyéhez kötött.
-    </p>
+    <div class="intro-sep"></div>
 
-    <h3>4.3. Tartalmak felhasználása</h3>
-    <p>
-      A felhasználó az alkalmazásban elérhető tartalmakat kizárólag személyes,
-      nem üzleti célra használhatja. A tartalmak kereskedelmi vagy marketing célú
-      felhasználása a Szolgáltató előzetes írásbeli engedélye nélkül tilos.
-    </p>
+    <!-- DEUTSCH -->
+    <section class="lang-block" id="de">
+      <div class="lang-title">Deutsch — Allgemeine Geschäftsbedingungen (informativ)</div>
 
-    <h3>4.4. Adatvédelem</h3>
-    <p>
-      A személyes adatok kezelésére a „BalatonGo – Adatkezelési Tájékoztató” rendelkezései irányadók.
-      A Szolgáltató a személyes adatokat a hatályos adatvédelmi jogszabályokkal,
-      különösen a GDPR-ral összhangban kezeli.
-    </p>
+      <h2>1. Angaben zum Dienstanbieter</h2>
+      <p>
+        <strong>Name des Anbieters:</strong> dr. Szonja Katalin Krizsán<br>
+        <strong>Sitz:</strong> Torony, Ungarn<br>
+        <strong>E-Mail-Adresse:</strong> balaton.go.info@gmail.com<br>
+        <strong>Telefon:</strong> –<br>
+        <strong>Steuernummer / Registernummer:</strong> –
+      </p>
+      <p>
+        Der Dienstanbieter, als Entwickler und Betreiber der BalatonGo-Anwendung (im Folgenden: Anbieter),
+        stellt den Nutzern die Nutzung der Anwendung gemäß den Bestimmungen dieser Allgemeinen
+        Geschäftsbedingungen (AGB) zur Verfügung.
+      </p>
 
-    <h3>4.5. Külső hivatkozások</h3>
-    <p>
-      Az alkalmazás harmadik felek weboldalaira mutató hivatkozásokat tartalmazhat.
-      Ezen oldalak tartalmáért, működéséért és adatkezelési gyakorlatáért a Szolgáltató
-      felelősséget nem vállal.
-    </p>
+      <h2>2. Beschreibung des Dienstes</h2>
+      <p>
+        BalatonGo ist eine Online-Tourismus-Anwendung, die Wanderwege, Sehenswürdigkeiten, Fahrpläne,
+        Wetterinformationen und andere Daten zur Unterstützung von Ausflügen in der Balaton-Region anzeigt.
+        Ziel der Anwendung ist es, den Nutzern eine erlebnisreiche, übersichtliche und aktuelle Information
+        über die natürlichen, kulturellen und Freizeitmöglichkeiten rund um den Plattensee zu bieten.
+      </p>
+      <p>
+        BalatonGo dient derzeit ausschließlich Informationszwecken und bietet keine direkten Buchungs-,
+        Ticketkauf- oder sonstigen kommerziellen Dienstleistungen an. Die angezeigten Daten sind unverbindlich;
+        der Anbieter übernimmt keine Verantwortung für deren Richtigkeit und Aktualität, insbesondere bei
+        Inhalten aus externen Quellen (z. B. Fahrpläne, Öffnungszeiten, Wetterdaten).
+      </p>
 
-    <h2>5. Felelősség kizárása és működési feltételek</h2>
+      <h2>3. Nutzungsbedingungen</h2>
+      <p>
+        3.1. Die BalatonGo-Anwendung darf ausschließlich von natürlichen Personen (Privatpersonen) auf eigene
+        Gefahr und ausschließlich für persönliche, nicht kommerzielle Zwecke genutzt werden. Ziel des Dienstes
+        ist die Unterstützung der individuellen Erholung, Ausflugsplanung und Information.
+      </p>
+      <p>3.2. Es ist untersagt, die Anwendung oder Teile davon:</p>
+      <ul>
+        <li>für kommerzielle, geschäftliche oder Werbezwecke zu nutzen;</li>
+        <li>Inhalte der Anwendung (Texte, Bilder, Daten, Quellcode, Struktur) zu kopieren, zu verbreiten, zu ändern oder neu zu veröffentlichen;</li>
+        <li>mit automatisierten Systemen („Bot“, „Scraper“, „Crawler“ usw.) zur Datenerfassung oder Integration in andere Systeme zu nutzen;</li>
+        <li>in einer Weise zu nutzen, die die berechtigten Interessen des Anbieters verletzt, irreführend oder rechtswidrig ist.</li>
+      </ul>
+      <p>
+        3.3. Die Inhalte von BalatonGo sind urheberrechtlich geschützt. Ohne vorherige schriftliche Genehmigung
+        des Anbieters ist jede öffentliche Wiederverwendung, der Weiterverkauf oder die Veröffentlichung von
+        Inhalten aus der Anwendung in jeglicher Form untersagt.
+      </p>
+      <p>
+        3.4. Der Anbieter behält sich das Recht vor, den Zugang für Nutzer, die gegen die Regeln verstoßen,
+        ohne vorherige Ankündigung einzuschränken oder zu sperren.
+      </p>
 
-    <h3>5.1. Információk pontossága</h3>
-    <p>
-      A Szolgáltató törekszik arra, hogy a BalatonGo alkalmazásban megjelenő információk
-      pontosak és naprakészek legyenek, ugyanakkor azok teljességéért és hibátlanságáért
-      garanciát nem vállal.
-    </p>
+      <h2>4. Urheberrecht und Datenschutz</h2>
+      <p>
+        4.1. Der gesamte Inhalt der BalatonGo-Anwendung – einschließlich, aber nicht beschränkt auf Texte,
+        Bilder, Datenbanken, Routen, Audiomaterialien, Icons, Quellcode, Design und Layout – ist urheberrechtlich
+        geschützt und ist das ausschließliche Eigentum von dr. Szonja Katalin Krizsán. Die unbefugte Nutzung,
+        Vervielfältigung, Änderung, Verbreitung, Veröffentlichung oder Integration in ein anderes System in
+        jeglicher Form ist untersagt und rechtswidrig.
+      </p>
+      <p>
+        4.2. Die BalatonGo-Datenbanken (z. B. Wanderwege, Fahrpläne, Standortsammlungen) basieren auf der eigenen
+        Recherche, Sammlung und Systematisierung des Anbieters. Diese Datenbanken sind als eigenständige
+        Datenbankwerke nach der Regierungsverordnung 84/2002 (IV.4.) und der Datenbankrichtlinie (96/9/EG)
+        geschützt; ihre Vervielfältigung oder Wiederverwendung ist nur mit Genehmigung des Anbieters möglich.
+      </p>
+      <p>
+        4.3. Durch die Nutzung der Anwendung erklären sich die Nutzer damit einverstanden, dass sie die in
+        BalatonGo verfügbaren Inhalte ausschließlich für persönliche, nicht geschäftliche Zwecke ansehen und
+        nutzen dürfen. Die sekundäre Nutzung der Inhalte für kommerzielle oder Marketingzwecke ohne vorherige
+        schriftliche Genehmigung des Anbieters ist untersagt.
+      </p>
+      <p>
+        4.4. Während des Betriebs der Anwendung erhebt der Anbieter keine personenbezogenen Daten von den Nutzern,
+        es sei denn, der Nutzer gibt diese freiwillig an (z. B. Kontakt, Newsletter, Registrierung). Die
+        Verarbeitung personenbezogener Daten erfolgt in jedem Fall gemäß den geltenden Datenschutzgesetzen (DSGVO).
+      </p>
+      <p>
+        4.5. Externe Links innerhalb der BalatonGo-Inhalte (z. B. Links zu Fahrplan-, Tourismus- oder Wetterseiten)
+        können auf Seiten Dritter verweisen, für deren Inhalt der Anbieter keine Verantwortung übernimmt.
+      </p>
 
-    <h3>5.2. Tájékoztató jelleg</h3>
-    <p>
-      A megjelenített információk (különösen menetrendek, nyitvatartások, időjárási adatok,
-      szolgáltatások elérhetősége) tájékoztató jellegűek. A felhasználó az ezek alapján
-      hozott döntésekért saját felelősségére jár el.
-    </p>
+      <h2>5. Haftungsausschluss und Betriebsbedingungen</h2>
+      <p>
+        5.1. Der Anbieter bemüht sich nach besten Kräften, dass die in der BalatonGo-Anwendung erscheinenden
+        Informationen korrekt, aktuell und verfügbar sind. Dennoch übernimmt der Anbieter keine Garantie für die
+        Vollständigkeit oder Richtigkeit der Daten sowie für den ständigen und fehlerfreien Betrieb des Dienstes.
+      </p>
+      <p>
+        5.2. Die in BalatonGo erscheinenden Daten, Bilder, Fahrpläne, Wetterinformationen, Öffnungszeiten und sonstigen
+        Inhalte dienen der Information; der Anbieter ist nicht verpflichtet, deren Richtigkeit und Aktualität zu prüfen.
+        Entscheidungen, die auf Grundlage von Informationen in der Anwendung getroffen werden (z. B. Reise, Programmwahl,
+        Unterunftsbuchung), erfolgen auf das alleinige Risiko des Nutzers.
+      </p>
+      <p>
+        5.3. Der Anbieter haftet nicht für direkte oder indirekte Schäden, die aus der Nutzung oder dem Ausfall des
+        Dienstes resultieren, einschließlich Datenverlust, entgangener Gewinn, technischer Fehler, Netzwerkprobleme,
+        Gerätefehler oder anderer Umstände auf Seiten des Nutzers.
+      </p>
+      <p>
+        5.4. BalatonGo kann auch Daten von Dritten (z. B. Fahrplananbieter, Tourismusorganisationen, Wetterportale)
+        anzeigen, für deren Inhalt, Änderungen oder Nichtverfügbarkeit der Anbieter keine Verantwortung übernimmt.
+      </p>
+      <p>
+        5.5. Der Anbieter ist berechtigt, den Inhalt, die Funktionen und den Betrieb der Anwendung jederzeit ohne
+        vorherige Ankündigung zu ändern, auszusetzen oder einzustellen. Die Nutzer können daraus keine
+        Entschädigungsansprüche ableiten.
+      </p>
 
-    <h3>5.3. Közvetett károk</h3>
-    <p>
-      A Szolgáltató nem felel a szolgáltatás használatából vagy használhatatlanságából eredő,
-      közvetlen vagy közvetett károkért (pl. elmaradt haszon, adatvesztés, technikai hiba,
-      hálózati vagy készülékprobléma).
-    </p>
+      <h2>6. Schlussbestimmungen</h2>
+      <p>
+        6.1. Ziel dieser Allgemeinen Geschäftsbedingungen (AGB) ist es, den rechtlichen Rahmen für die Nutzung der
+        BalatonGo-Anwendung festzulegen. Die AGB treten am Tag der Veröffentlichung in Kraft und gelten bis auf Widerruf.
+      </p>
+      <p>
+        6.2. Der Anbieter ist berechtigt, den Inhalt der AGB jederzeit einseitig zu ändern, insbesondere wenn der Betrieb
+        der Anwendung, der Leistungsumfang oder das rechtliche Umfeld dies rechtfertigen. Änderungen werden mit der
+        Veröffentlichung wirksam.
+      </p>
+      <p>
+        6.3. Durch die Nutzung der BalatonGo-Anwendung akzeptiert der Nutzer die jeweils geltenden AGB.
+      </p>
+      <p>
+        6.4. In Fragen, die in diesen AGB nicht geregelt sind, gilt ungarisches Recht, insbesondere das Bürgerliche
+        Gesetzbuch (Gesetz V von 2013), das Gesetz über elektronische Handelsdienstleistungen (Gesetz CVIII von 2001)
+        und das Urheberrechtsgesetz (Gesetz LXXVI von 1999).
+      </p>
+      <p>
+        6.5. Die Parteien beabsichtigen, ihre Streitigkeiten primär auf friedlichem Weg durch Verhandlungen beizulegen.
+        Sollte dies erfolglos bleiben, wird für die Beilegung des Rechtsstreits die Zuständigkeit des Bezirksgerichts
+        Szombathely vereinbart.
+      </p>
 
-    <h3>5.4. Harmadik felektől származó adatok</h3>
-    <p>
-      A BalatonGo egyes adatai harmadik felektől származhatnak. Ezen adatok tartalmáért,
-      változásáért vagy elérhetőségéért a Szolgáltató nem vállal felelősséget.
-    </p>
-
-    <h3>5.5. Szolgáltatás módosítása</h3>
-    <p>
-      A Szolgáltató jogosult az alkalmazás tartalmát, funkcióit, felépítését és elérhetőségét
-      bármikor, előzetes értesítés nélkül módosítani, korlátozni vagy megszüntetni.
-    </p>
-
-    <h2>6. Záró rendelkezések</h2>
-
-    <h3>6.1. Az ÁSZF célja és hatálya</h3>
-    <p>
-      A jelen ÁSZF célja, hogy meghatározza a BalatonGo alkalmazás használatának feltételeit.
-      Az ÁSZF a közzététel napján lép hatályba, és visszavonásig érvényes.
-    </p>
-
-    <h3>6.2. Módosítás</h3>
-    <p>
-      A Szolgáltató jogosult a jelen ÁSZF rendelkezéseit egyoldalúan módosítani.
-      A módosítás a közzététel időpontjától hatályos.
-    </p>
-
-    <h3>6.3. Elfogadás</h3>
-    <p>
-      A BalatonGo alkalmazás használatával a felhasználó elfogadja a mindenkor hatályos ÁSZF-et.
-      Regisztráció vagy belépés során a felhasználó külön jelölőnégyzettel is megerősíti
-      az ÁSZF és az Adatkezelési Tájékoztató elfogadását.
-    </p>
-
-    <h3>6.4. Irányadó jog</h3>
-    <p>
-      A jelen ÁSZF-ben nem szabályozott kérdésekben a magyar jog az irányadó, különösen:
-      a Polgári Törvénykönyv (2013. évi V. törvény – Ptk.),
-      az elektronikus kereskedelmi szolgáltatásokról szóló 2001. évi CVIII. törvény (Eker. tv.),
-      valamint a szerzői jogról szóló 1999. évi LXXVI. törvény (Szjt.).
-    </p>
-
-    <h3>6.5. Jogviták rendezése</h3>
-    <p>
-      A felek a vitás kérdéseiket elsősorban békés úton, egyeztetés keretében rendezik.
-      Amennyiben ez nem vezet eredményre, a jogvita elbírálására a Szombathelyi Járásbíróság
-      illetékességét kötik ki.
-    </p>
-  </div>
-</body>
-</html>
+      <p><strong>Datum des Inkrafttretens:</strong> 5. November 2025</p>
+    </section>
