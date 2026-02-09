@@ -2,219 +2,93 @@
 <html lang="hu">
 <head>
   <meta charset="UTF-8">
-  <title>BalatonGo – Általános Szerződési Feltételek (ÁSZF)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #020817;
-      color: #e5e7eb;
-      line-height: 1.7;
-    }
+<div class="lang-title">MAGYAR – Adatkezelési Tájékoztató</div>
 
-    .wrap {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 18px 14px 26px;
-    }
+<h2>1. Az adatkezelő adatai</h2>
+<p><strong>Név:</strong> dr. Krizsán Szonja Katalin</p>
+<p><strong>Székhely:</strong> Torony, Magyarország</p>
+<p><strong>E-mail:</strong> balaton.go.info@gmail.com</p>
 
-    h1 {
-  font-size: 24px;
-  margin-bottom: 12px;
-  text-align: left;
-  color: #38bdf8;
-}
+<p>
+Az adatkezelés célja a BalatonGo alkalmazás működtetése, a felhasználói fiókok kezelése,
+a kedvencek és személyes beállítások mentése.
+</p>
 
-    /* ---- INTRO BLOKK ---- */
-    .intro-block {
-      max-width: 720px;
-      margin: 0 auto 26px;
-    }
+<h2>2. Az adatkezelés jogalapja</h2>
+<p>
+Az adatkezelés a felhasználó önkéntes hozzájárulásán
+(GDPR 6. cikk (1) a) pont), valamint az alkalmazás működéséhez szükséges
+szerződés teljesítésén (GDPR 6. cikk (1) b) pont) alapul.
+</p>
 
-    .intro-block ul {
-      margin: 10px 0 14px;
-      padding-left: 18px;
-      font-size: 14px;
-    }
+<h2>3. A kezelt adatok köre</h2>
+<ul>
+  <li>név (opcionális)</li>
+  <li>e-mail cím (felhasználói fiókhoz)</li>
+  <li>jelszó (titkosítva, nem visszafejthető módon)</li>
+  <li>kedvencek és mentett útvonalak</li>
+  <li>helyadat (csak a felhasználó engedélyével, pl. „Közelben” funkció)</li>
+</ul>
 
-    .intro-block li {
-      margin-bottom: 4px;
-    }
+<p><strong>Az alkalmazás nem gyűjt bankkártya- vagy egészségügyi adatokat.</strong></p>
 
-    .legal-note {
-      font-size: 13px;
-      margin: 10px 0;
-    }
+<h2>4. Az adatok felhasználása és tárolása</h2>
+<p>
+A kezelt adatokat kizárólag az alkalmazás működéséhez használjuk
+(fiókazonosítás, kedvencek megőrzése).
+</p>
+<p>
+Az adatok titkosított adatbázisban kerülnek tárolásra, harmadik fél számára nem kerülnek továbbításra.
+A tárolás a Google Firebase biztonságos adatbázisában történik,
+amely az Európai Unió adatvédelmi előírásainak (GDPR) megfelelő adatközpontban működik.
+</p>
+<p>
+A felhasználói adatok a fiók megszüntetésével vagy e-mailes kérésre törölhetők.
+</p>
 
-    .legal-note.strong {
-      font-weight: 600;
-    }
+<h2>5. Az adatok megőrzésének időtartama</h2>
+<p>
+Az adatok a felhasználói fiók fennállásáig kerülnek megőrzésre,
+törlés után legfeljebb 30 napig (biztonsági mentés céljából).
+</p>
 
-    .intro-sep {
-      border-top: 1px solid rgba(203,233,248,0.35);
-      margin: 18px 0;
-    }
+<h2>6. A felhasználó jogai</h2>
+<p>A felhasználó jogosult:</p>
+<ul>
+  <li>adataihoz való hozzáférést kérni,</li>
+  <li>helyesbítést vagy törlést kérni,</li>
+  <li>az adatkezelés korlátozását kérni,</li>
+  <li>tiltakozni az adatkezelés ellen,</li>
+  <li>adatai hordozhatóságát kérni (GDPR 20. cikk).</li>
+</ul>
 
-    /* ---- TÖBBI SZÖVEG ---- */
-    h2 {
-      font-size: 16px;
-      margin: 14px 0 6px;
-      color: #38bdf8;
-    }
+<p>
+A kérelmeket a Szolgáltató a fenti e-mail címen fogadja,
+és legkésőbb 30 napon belül válaszol.
+</p>
 
-    h3 {
-      font-size: 14px;
-      margin: 10px 0 4px;
-      color: #38bdf8;
-    }
+<h2>7. Adatbiztonság</h2>
+<p>
+A Szolgáltató minden szükséges technikai és szervezési intézkedést megtesz
+az adatok védelme érdekében (titkosított jelszavak, HTTPS kapcsolat,
+korlátozott hozzáférés).
+</p>
+<p>
+A felhasználói jelszavak semmilyen formában nem visszafejthetők.
+</p>
 
-    p, li {
-      font-size: 13px;
-      margin-bottom: 6px;
-    }
+<h2>8. Jogorvoslat</h2>
+<p>
+Panasz esetén a felhasználó az alábbi hatósághoz fordulhat:
+</p>
+<p>
+<strong>Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH)</strong><br>
+Cím: 1055 Budapest, Falk Miksa utca 9–11.<br>
+Web: https://naih.hu
+</p>
 
-    ul { padding-left: 20px; }
-
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="wrap">
-
-    <h1>BalatonGo</h1>
-
-    <div class="intro-block">
-      <ul>
-        <li>Általános Szerződési Feltételek (ÁSZF)</li>
-        <li>Terms of Service</li>
-        <li>Allgemeine Geschäftsbedingungen (AGB)</li>
-      </ul>
-
-      <div class="legal-note strong">
-        A jelen dokumentum hivatalos és jogilag kötelező erejű nyelve a magyar.
-      </div>
-
-      <div class="legal-note">
-        The official and legally binding language of this document is Hungarian.
-        The English version is provided for informational purposes only.
-      </div>
-
-      <div class="legal-note">
-        Die offizielle und rechtlich verbindliche Sprache dieses Dokuments ist Ungarisch.
-        Die deutsche Version dient ausschließlich zu Informationszwecken.
-      </div>
-
-      <div class="intro-sep"></div>
-    </div>
 <div class="meta-line">
-  Hatálybalépés dátuma: 2025. november 5. ·
-  Szolgáltató: dr. Krizsán Szonja Katalin (Torony, Magyarország)
+  Hatálybalépés: 2025. november 5.<br>
+  Adatkezelő: dr. Krizsán Szonja Katalin
 </div>
-
-
-    <h2>1. Az adatkezelő adatai</h2>
-    <p>Név: dr. Krizsán Szonja Katalin</p>
-    <p>Székhely: Torony, Magyarország</p>
-    <p>E-mail: <a href="mailto:balaton.go.info@gmail.com">balaton.go.info@gmail.com</a></p>
-    <p>Az adatkezelő a BalatonGo alkalmazás fejlesztője és üzemeltetője.</p>
-
-    <h2>2. Az adatkezelés célja és jogalapja</h2>
-    <p>
-      Az adatkezelés célja a BalatonGo alkalmazás működtetése, a felhasználói fiókok kezelése,
-      a kedvencek és személyes beállítások mentése, valamint az alkalmazás szolgáltatásainak
-      biztosítása.
-    </p>
-    <p>Az adatkezelés jogalapja:</p>
-    <ul>
-      <li>a felhasználó önkéntes hozzájárulása (GDPR 6. cikk (1) a) pont), különösen a regisztráció,
-        kedvencek mentése és személyes beállítások használata esetén,</li>
-      <li>valamint az alkalmazás használatához kapcsolódó szerződés teljesítése
-        (GDPR 6. cikk (1) b) pont).</li>
-    </ul>
-
-    <h2>3. A kezelt adatok köre</h2>
-    <p>Az adatkezelő az alábbi adatokat kezelheti, ha a felhasználó ezeket megadja:</p>
-    <ul>
-      <li>név (opcionális),</li>
-      <li>e-mail cím (felhasználói fiók létrehozásához, azonosításhoz),</li>
-      <li>jelszó (kizárólag titkosított, nem visszafejthető formában),</li>
-      <li>kedvencek, mentett útvonalak és egyéni beállítások,</li>
-      <li>helyadat, kizárólag akkor, ha a felhasználó ahhoz kifejezetten hozzájárul
-        (pl. „Közelben” funkció használatakor).</li>
-    </ul>
-    <p>A BalatonGo nem kezel bankkártyaadatokat, egészségügyi adatokat vagy különleges adatokat.</p>
-
-    <h2>4. Az adatok felhasználása és tárolása</h2>
-    <p>
-      A személyes adatokat az adatkezelő kizárólag az alkalmazás működéséhez szükséges mértékben használja fel:
-      felhasználói fiók létrehozása és azonosítása, kedvencek és egyéni beállítások megőrzése,
-      a szolgáltatás működésének biztosítása.
-    </p>
-    <p>
-      Az adatok titkosított formában, informatikai védelemmel ellátott rendszerben kerülnek tárolásra.
-      Az adatokat az adatkezelő harmadik fél részére nem értékesíti, nem adja át marketing célra.
-    </p>
-    <p>
-      Az adatok a Google Firebase biztonságos adatbázisában kerülnek tárolásra,
-      amely az Európai Unió adatvédelmi előírásainak (GDPR) megfelelő infrastruktúrán működik.
-    </p>
-    <p>
-      A felhasználó kérésére vagy a fiók törlése esetén az adatkezelő a személyes adatokat törli,
-      a mentésekből pedig legfeljebb 30 napon belül véglegesen eltávolítja.
-    </p>
-
-    <h2>5. Az adatok megőrzésének időtartama</h2>
-    <ul>
-      <li>A személyes adatok a felhasználói fiók fennállásáig kerülnek tárolásra.</li>
-      <li>A fiók megszüntetését vagy törlési kérelem teljesítését követően az adatok
-        legfeljebb 30 napig maradhatnak fenn biztonsági mentésekben.</li>
-    </ul>
-
-    <h2>6. A felhasználó jogai</h2>
-    <p>A felhasználót a GDPR alapján az alábbi jogok illetik meg:</p>
-    <ul>
-      <li>hozzáférés a rá vonatkozó személyes adatokhoz,</li>
-      <li>az adatok helyesbítésének kérése,</li>
-      <li>az adatok törlésének („elfeledtetésének”) kérése,</li>
-      <li>az adatkezelés korlátozásának kérése,</li>
-      <li>tiltakozás az adatkezelés ellen,</li>
-      <li>az adatok hordozhatóságához való jog (GDPR 20. cikk).</li>
-    </ul>
-    <p>
-      A felhasználó kérelmeit az adatkezelő a
-      <a href="mailto:balaton.go.info@gmail.com">balaton.go.info@gmail.com</a>
-      címen fogadja, és azokra legkésőbb 30 napon belül választ ad.
-    </p>
-
-    <h2>7. Adatbiztonság</h2>
-    <p>
-      Az adatkezelő minden észszerű technikai és szervezési intézkedést megtesz a személyes adatok védelme érdekében.
-      A jelszavak titkosítva kerülnek tárolásra, közvetlenül nem visszafejthetők.
-      A hozzáférés az adatokhoz korlátozott, csak az arra jogosult technikai rendszerek számára engedélyezett.
-    </p>
-
-    <h2>8. Jogorvoslati lehetőségek</h2>
-    <p>
-      Amennyiben a felhasználó úgy véli, hogy személyes adatainak kezelése sérti a vonatkozó jogszabályokat,
-      panasszal élhet a Nemzeti Adatvédelmi és Információszabadság Hatóságnál (NAIH):
-    </p>
-    <p>
-      Cím: 1055 Budapest, Falk Miksa utca 9–11.<br>
-      Weboldal: <a href="https://naih.hu" target="_blank" rel="noopener noreferrer">naih.hu</a>
-    </p>
-    <p>
-      A felhasználó jogosult továbbá bírósághoz fordulni a lakóhelye vagy tartózkodási helye szerinti törvényszékhez.
-    </p>
-  </div>
-</body>
-</html>
