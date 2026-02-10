@@ -29,9 +29,10 @@
 
     /* ---- INTRO BLOKK ---- */
     .intro-block {
-  max-width: none;
-  margin: 0 0 26px;
-}
+      max-width: none;
+      margin: 0 0 26px;
+    }
+
     .intro-block ul {
       margin: 10px 0 14px;
       padding-left: 18px;
@@ -59,12 +60,31 @@
       font-weight: 600;
     }
 
-   .intro-sep {
-  border: none;
-  border-top: 1px solid #38bdf8;
-  margin: 18px 0;
-  opacity: 0.6;
-}
+    /* ---- META SOR (Hatálybalépés stb.) ---- */
+    .meta-line {
+      font-size: 13px;
+      font-weight: 400;
+      opacity: 0.85;
+      margin: 14px 0 18px;
+      line-height: 1.5;
+    }
+
+    /* ---- ELVÁLASZTÓ CSÍKOK ---- */
+    .intro-sep {
+      border: none;
+      border-top: 1px solid #38bdf8;
+      margin: 18px 0;
+      opacity: 0.6;
+    }
+
+    /* ha bárhol sima <hr> maradt */
+    hr {
+      border: none;
+      border-top: 1px solid #38bdf8;
+      margin: 18px 0;
+      opacity: 0.6;
+    }
+
     /* ---- TARTALMI CÍMEK ---- */
     h2 {
       font-size: 16px;
@@ -112,22 +132,21 @@
         <li>Datenschutzerklärung</li>
       </ul>
 
-      <div class="legal-note strong">
-        A jelen dokumentum hivatalos és jogilag kötelező erejű nyelve a magyar.
-      </div>
+    <div class="legal-note strong">
+  A jelen dokumentum hivatalos és jogilag kötelező erejű nyelve a magyar.
+</div>
 
-      <div class="legal-note">
-        The official and legally binding language of this document is Hungarian.
-        The English version is provided for informational purposes only.
-      </div>
+<div class="legal-note">
+  The official and legally binding language of this document is Hungarian.
+  The English version is provided for informational purposes only.
+</div>
 
-      <div class="legal-note">
-        Die offizielle und rechtlich verbindliche Sprache dieses Dokuments ist Ungarisch.
-        Die deutsche Version dient ausschließlich zu Informationszwecken.
-      </div>
+<div class="legal-note">
+  Die offizielle und rechtlich verbindliche Sprache dieses Dokuments ist Ungarisch.
+  Die deutsche Version dient ausschließlich zu Informationszwecken.
+</div>
 
-      <div class="intro-sep"></div>
-    </div>
+<hr class="intro-sep">
 
 <div class="lang-title">MAGYAR – Adatkezelési Tájékoztató</div>
 
@@ -164,11 +183,13 @@ szerződés teljesítésén (GDPR 6. cikk (1) b) pont) alapul.
 A kezelt adatokat kizárólag az alkalmazás működéséhez használjuk
 (fiókazonosítás, kedvencek megőrzése).
 </p>
+
 <p>
 Az adatok titkosított adatbázisban kerülnek tárolásra, harmadik fél számára nem kerülnek továbbításra.
 A tárolás a Google Firebase biztonságos adatbázisában történik,
 amely az Európai Unió adatvédelmi előírásainak (GDPR) megfelelő adatközpontban működik.
 </p>
+
 <p>
 A felhasználói adatok a fiók megszüntetésével vagy e-mailes kérésre törölhetők.
 </p>
@@ -200,6 +221,7 @@ A Szolgáltató minden szükséges technikai és szervezési intézkedést megte
 az adatok védelme érdekében (titkosított jelszavak, HTTPS kapcsolat,
 korlátozott hozzáférés).
 </p>
+
 <p>
 A felhasználói jelszavak semmilyen formában nem visszafejthetők.
 </p>
@@ -208,10 +230,11 @@ A felhasználói jelszavak semmilyen formában nem visszafejthetők.
 <p>
 Panasz esetén a felhasználó az alábbi hatósághoz fordulhat:
 </p>
+
 <p>
 <strong>Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH)</strong><br>
 Cím: 1055 Budapest, Falk Miksa utca 9–11.<br>
-Web: https://naih.hu
+Web: <a href="https://naih.hu" target="_blank" rel="noopener">https://naih.hu</a>
 </p>
 
 <div class="meta-line">
@@ -220,7 +243,6 @@ Web: https://naih.hu
 </div>
 
 <hr class="intro-sep">
-
 
 <h2 class="lang-title en">ENGLISH – Privacy Policy</h2>
 
@@ -251,7 +273,7 @@ of the application (GDPR Article 6(1)(b)).
   <li>Email address (for account)</li>
   <li>Password (encrypted, non-decryptable)</li>
   <li>Favorites and saved routes</li>
-  <li>Location data (only if authorized by the user, e.g. for the “Nearby” function)</li>
+  <li>Location data (only if authorized by the user, e.g. the “Nearby” function)</li>
 </ul>
 
 <p><strong>The application does not collect credit card or health data.</strong></p>
@@ -310,11 +332,12 @@ In case of a complaint, the user may contact the data protection authority:
 Address: 1055 Budapest, Falk Miksa utca 9–11., Hungary<br>
 Web: <a href="https://naih.hu" target="_blank" rel="noopener">https://naih.hu</a>
 </p>
-    <div class="meta-line">
+
+<div class="meta-line">
   Effective Date: November 5, 2025<br>
   Data Controller: dr. Szonja Katalin Krizsán (Torony, Hungary)
 </div>
-    
+
 <hr class="intro-sep">
 
 <h2 class="lang-title de">DEUTSCH – Datenschutzerklärung</h2>
@@ -346,7 +369,7 @@ erforderlich ist (DSGVO Art. 6 Abs. 1 lit. b).
   <li>E-Mail-Adresse (für das Konto)</li>
   <li>Passwort (verschlüsselt, nicht dechiffrierbar)</li>
   <li>Favoriten und gespeicherte Routen</li>
-  <li>Standortdaten (nur wenn vom Nutzer genehmigt, z. B. für die Funktion „In der Nähe“)</li>
+  <li>Standortdaten (nur wenn vom Nutzer genehmigt, z. B. „In der Nähe“)</li>
 </ul>
 
 <p><strong>Die Anwendung erhebt keine Bankkarten- oder Gesundheitsdaten.</strong></p>
@@ -361,8 +384,7 @@ und nicht an Dritte weitergegeben.
 
 <p>
 Die Daten werden in der sicheren Datenbank von Google Firebase gespeichert,
-die in einem Rechenzentrum betrieben wird, das den Datenschutzbestimmungen
-der Europäischen Union (DSGVO) entspricht.
+die den Datenschutzbestimmungen der Europäischen Union (DSGVO) entspricht.
 Benutzerdaten können durch Löschung des Kontos
 oder auf Anfrage per E-Mail gelöscht werden.
 </p>
@@ -380,7 +402,7 @@ und nach der Löschung maximal 30 Tage lang (zu Sicherungszwecken).
   <li>Berichtigung oder Löschung,</li>
   <li>Einschränkung der Verarbeitung,</li>
   <li>Widerspruch gegen die Verarbeitung,</li>
-  <li>sowie Datenübertragbarkeit (DSGVO Art. 20).</li>
+  <li>Datenübertragbarkeit (DSGVO Art. 20).</li>
 </ul>
 
 <p>
@@ -406,9 +428,7 @@ Adresse: 1055 Budapest, Falk Miksa utca 9–11., Ungarn<br>
 Web: <a href="https://naih.hu" target="_blank" rel="noopener">https://naih.hu</a>
 </p>
 
-    <div class="meta-line">
+<div class="meta-line">
   Datum des Inkrafttretens: 5. November 2025<br>
   Anbieter: dr. Szonja Katalin Krizsán (Torony, Ungarn)
-</div>
-
 </div>
